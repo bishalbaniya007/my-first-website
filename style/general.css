@@ -1,0 +1,18 @@
+p{
+    margin-top: 0px;
+    margin-bottom: 0px;                             
+}
+body{
+    /* this style below will be inherited */
+    font-family: Roboto, Arial; /** this is called font stack 
+                                    if for some reasons rorboto fails to load on our page then arial is used as a backup font **/
+    height: 5000px;
+    margin: 0; /** this will set all the margins left right top and bottom of the page to 0.
+                    so our content appears to the edge of the page **/
+    padding-top: 80px; /** padding was added beacause the header was overlapped with content 
+                            cause of the position property **/
+    padding-left: 96px; /** this ws added beacuse sidebar was covering our content **/
+
+    padding-right: 24px;
+    background-color: rgb(248, 248, 248);
+}

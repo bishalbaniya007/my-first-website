@@ -1,0 +1,41 @@
+.side-bar{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 55px; /** we are sticking the sidebar at 55px top from the webpage because the header height is 55px **/
+    background-color: white;
+    width: 72px;
+    z-index: 200;
+    padding-top: 5px;
+}
+.sidebar-link{
+    background-color: white;
+    height: 74px;
+    display: flex;
+    justify-content: center; /** horizontally centered for flex-direction: rows; **/
+    align-items: center; /** vertically center for flex-direction: rows; **/
+    flex-direction: column; /** deafult value is flex-direction: row ; which cause elements to appear next to eacother.
+                                flex-direction: column causes the elements to appear on top of eachother **/
+    /** the nature of align-items and justify-content are reversesd when flex-direction: column; is used.
+        i.e align-items: now effects horizontal 
+            justify-content: now effects vertical **/
+    cursor: pointer;
+}
+.sidebar-link:hover{
+    background-color: rgb(235 ,235 ,235);
+
+}
+/** to target images inside of a class we can use following syntax which only targets images inside of 
+    side bar class but not the whole page **/
+.sidebar-link img{
+    height: 24px;
+    margin-bottom: 4px;
+}
+
+/** targetting the divisions inside the sidebar **/
+.sidebar-link div{
+    font-size: 10px;
+    
+}
+
+
